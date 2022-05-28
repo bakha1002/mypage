@@ -1,0 +1,400 @@
+body,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Do Hyeon", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 1800px;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  -moz-user-select: auto;
+  -webkit-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  /* color */
+  --color-white: white;
+  --color-darkgrey: #333333;
+  --color-black: black;
+
+  /* 폰트 */
+  --font-basic: "Do Hyeon", sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  color: var(--color-white);
+}
+
+/* 전체 테두리 */
+.wrapper {
+}
+
+/* 메인로고 */
+.mainlogo {
+  width: 40%;
+  font-size: 3em;
+}
+
+/* 메인 로고>텍스트 */
+span {
+  width: 100%;
+  text-align: center;
+}
+
+/* 메인 로고 링크 */
+.mainlogo a {
+  display: flex;
+  top: auto;
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+  align-items: center;
+}
+
+/* 전체 섹션 크기 */
+.section {
+  width: 100%;
+  height: 937px;
+  overflow: hidden;
+}
+
+/* <!-- 네비게이션바 전체 --> */
+.NavBar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+}
+
+/* 네비게이션바 */
+.NavBarList {
+  display: flex;
+  width: 40%;
+  letter-spacing: 5px;
+  font-size: 1.5em;
+  opacity: 0.8;
+}
+
+/* 네비게이션바 상세 항목 */
+.NavBarList li {
+  padding: 30px 0;
+}
+
+.NavBarList a:hover {
+  text-decoration: underline;
+  color: #b8b8b8;
+}
+
+/* 네비게이션바 상세 항목의 사이즈 */
+.NavBarListItem {
+  width: 100%;
+  padding: 5px;
+}
+
+/* <!-- 컨텐츠>메인 --> */
+.main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/labtop1.jpg);
+  background-size: cover;
+  min-height: 1400px;
+}
+
+.greetings {
+  min-width: 650px;
+  min-height: 300px;
+  font-size: 4em;
+  line-height: 1.3em;
+  position: relative;
+  top: -5%;
+  left: -2%;
+  color: var(--color-darkgrey);
+}
+
+.main video {
+  width: 90%;
+}
+
+/* <!-- 인트로 --> */
+.intro {
+  position: relative;
+}
+
+.videoText {
+  opacity: 0.8;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 6em;
+  box-sizing: content-box;
+  color: var(--color-white);
+}
+
+#aim1 {
+  opacity: 1;
+  color: #ffa500;
+}
+
+/* <!-- 갤러리 --> */
+.sectionTitle {
+  font-size: 50px;
+  color: var(--color-darkgrey);
+  margin-top: 120px;
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 카드박스 */
+.cardbox {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 90%;
+  color: var(--color-darkgrey);
+}
+
+/* 카드 */
+.card {
+  position: relative;
+  width: 400px;
+  height: 700px;
+  transform-style: preserve-3d;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(214, 214, 214);
+  background-color: rgb(238, 238, 238);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
+.card .frontTitle {
+  color: var(--color-darkgrey);
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btnWrapper a {
+  width: 43%;
+  padding: 5px;
+  text-align: center;
+}
+
+.btnWrapper a:active {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: tranform 0.3s;
+  -webkit-transition: tranform 0.3s;
+  -moz-transition: tranform 0.3s;
+  -ms-transition: tranform 0.3s;
+  -o-transition: tranform 0.3s;
+}
+
+.btnWrapper .notion {
+  background-color: var(--color-darkgrey);
+}
+
+.btnWrapper .github {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgrey);
+  color: var(--color-darkgrey);
+}
+
+.frontContent {
+  padding: 10px;
+  font-weight: 200;
+  font-size: 20px;
+  min-height: 80px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 키보드 */
+.keyBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.smallkeyWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.key {
+  position: relative;
+  display: inline-block;
+  width: 4.5vw;
+  height: 5vw;
+  padding: 0.5vw 1vw;
+  margin: 0.5vw 0.2vw;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+  background: rgb(214, 214, 214);
+  box-shadow: 0.2vw 0.2vw 0.5vw #474343, -0.2vw -0.2vw 0.5vw #fff;
+  overflow: hidden;
+}
+
+.key::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  background: linear-gradient(90deg, #f3f3f3, #c9c9c9);
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+  box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),
+    10px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.key i {
+  position: relative;
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.key8 {
+  width: 92%;
+}
+
+.key:active {
+  box-shadow: 1px 1px 2px #fff, -1px -1px 2px #474343;
+}
+
+/* <!-- 푸터 --> */
+footer {
+  display: flex;
+  height: 50px;
+  opacity: 0.7;
+  border-top: 5px dashed grey;
+  position: relative;
+  justify-content: center;
+  background-color: white;
+  color: var(--color-darkgrey);
+}
+
+.FooterInfo {
+  display: flex;
+  font-size: 1em;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon i,
+.icon img {
+  color: var(--color-darkgrey);
+  font-size: 20px;
+}
+
+.icon a {
+  padding: 10px;
+}
+
+/* 모달창 */
+.modalBox .btnWrapper button {
+  padding: 10px;
+  width: 45%;
+  cursor: pointer;
+}
+
+.modalBox .btnWrapper button:nth-child(1) {
+  background-color: var(--color-darkgrey);
+  color: var(--color-white);
+  border: none;
+}
+
+.modalBox .btnWrapper button:nth-child(2) {
+  background-color: var(--color-white);
+  color: var(--color-darkgrey);
+  border: 1px solid var(--color-darkgrey);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalBox {
+  position: absolute;
+  background-color: #fff;
+  width: 400px;
+  /* height: 200px; */
+  padding: 15px;
+  text-align: center;
+}
+
+.modalBox button {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
